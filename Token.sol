@@ -16,7 +16,7 @@ contract Token is TRC20, TRC20Detailed {
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
      */
-    constructor () public TRC20Detailed("2p3Token", "2p3", 8) {
+    constructor () public TRC20Detailed("SafeCO", "SCO", 8) {
         _mint(msg.sender, 10000000 * (10 ** uint256(decimals())));
     }
 }
